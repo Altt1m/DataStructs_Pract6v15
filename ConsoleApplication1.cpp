@@ -1,21 +1,21 @@
 ﻿#include <iostream>
 
-#include "SelectionSort.h"
+//#include "SelectionSort.h"
 //#include "BubbleSort.h"
 //#include "InsertionSort.h"
 //#include "ShellSort.h"
 //#include "QuickSort.h"
-//#include "MergeSort.h"
+#include "MergeSort.h"
 
 
 int main()
 {
-    SelectionTask();
+    //SelectionTask();
     //BubbleTask();
     //InsertionTask();
     //ShellTask();
     //QuickTask();
-    //MergeTask();
+    MergeTask();
 
 
     return 0;

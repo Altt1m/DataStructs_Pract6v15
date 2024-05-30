@@ -45,7 +45,7 @@ void PrintArray(int arr[], int n)
     cout << endl;
 }
 
-int InsertionTask()
+void InsertionTask()
 {
     const int n = 10000;
     int arr[n];
@@ -66,6 +66,7 @@ int InsertionTask()
     cout << "Swaps: " << swaps << endl;
     cout << "Cast time (microseconds): " << duration.count() << endl;
 
+    iterations = 0, comparisons = 0, swaps = 0;
     const int m = 100;
     int arr2[m];
     for (int i = 0; i < m; ++i)
@@ -73,7 +74,10 @@ int InsertionTask()
         arr2[i] = rand() % 300; // Випадкові числа від 0 до 9999
     }
 
-    cout << "Array of 100 elements:\n";
+    cout << "\nArray of 100 elements:" << endl;
     InsertionSort(arr2, m, iterations, comparisons, swaps);
     PrintArray(arr2, m);
+    cout << "Iterations: " << iterations << endl;
+    cout << "Comparisons: " << comparisons << endl;
+    cout << "Swaps: " << swaps << endl;
 }
